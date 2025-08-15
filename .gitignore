@@ -1,34 +1,45 @@
-# Gradle files
+# --- Kotlin/Gradle/IDE ---
 .gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+*.iml
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/shelf
 *.log
 
-# Android Studio generated files and folders
+# --- Android ---
+local.properties
 captures/
 .externalNativeBuild/
 .cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
 *.keystore
+*.jks
+**/google-services.json
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# --- iOS / Compose Multiplatform ---
+iosApp/**/DerivedData/
+iosApp/**/build/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+**/*.xcscmblueprint
+Pods/
+*.ipa
+**/GoogleService-Info.plist
 
-# Android Profiling
-*.hprof
+# --- Kotlin/Native & tooling ---
+.konan/
+**/sqldelight/databases/**
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Env/Secrets ---
+.env
+
+# --- Optional (if you add JS tooling later) ---
+node_modules/
