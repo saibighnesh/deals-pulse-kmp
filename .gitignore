@@ -5,9 +5,6 @@
 *.iml
 .idea/
 .idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/dictionaries
-.idea/**/shelf
 *.log
 
 # --- Android ---
@@ -17,7 +14,7 @@ captures/
 .cxx/
 *.keystore
 *.jks
-**/google-services.json
+androidApp/**/google-services.json
 
 # --- iOS / Compose Multiplatform ---
 iosApp/**/DerivedData/
@@ -28,9 +25,9 @@ iosApp/**/build/
 **/*.xcscmblueprint
 Pods/
 *.ipa
-**/GoogleService-Info.plist
+iosApp/**/GoogleService-Info.plist
 
-# --- Kotlin/Native & tooling ---
+# --- Kotlin/Native & tools ---
 .konan/
 **/sqldelight/databases/**
 
@@ -39,7 +36,4 @@ Pods/
 Thumbs.db
 
 # --- Env/Secrets ---
-.env
-
-# --- Optional (if you add JS tooling later) ---
-node_modules/
+.envnode_modules/
